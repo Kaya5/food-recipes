@@ -1,0 +1,34 @@
+.recipe{
+    border-radius: 50px;
+    box-shadow: 1px 2px 10px rgb(99, 97, 97);
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgb(255, 255, 255, 0.3);
+    align-items: center;
+    min-width: 40%;
+    width: 55vw;
+    height: 100%;
+}
+
+img{
+    width: 40%;
+    height: 40%;
+    padding-bottom: 2%;
+}
+
+.calories{
+    text-align: center;
+}
+
+ul{
+    width: 45vw;  
+    margin-left: -3%;
+}
+
+h2{
+    width: 45vw;
+    text-align: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
