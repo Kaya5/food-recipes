@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const App = () => {
   const APP_ID = "aa2b90bb";
-  const APP_KEY = "85c65e9d285e9a1dfce74f3cfbcddf7d";
+  const APP_KEY = "";
 
   //all the data returned is saved in this 'recipes' array.
   const [recipes, setRecipes] = useState([]);
