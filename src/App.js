@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Recipe from "./components/Recipe";
 import "./App.css";
-import uuid from "uuid/v4";
+// import uuid from "uuid/v4";
+
+import { v4 as uuidv4 } from "uuid";
 
 const App = () => {
   const APP_ID = "aa2b90bb";
@@ -42,7 +44,8 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    // <div className='App'>
+    <div className={!title ? "no-bg" : "App"}>
       <form className="form" onSubmit={searchResult}>
         <input
           className="search-bar"
@@ -56,12 +59,11 @@ const App = () => {
         </button>
       </form>
 
-
       <div className="recipes">
         {/* mapping over all the individual recipes contained in the array */}
         {recipes.map((recipe) => (
           <Recipe
-            key={uuid()}
+            key={uuidv4()}
             name={recipe.recipe.label}
             image={recipe.recipe.image}
             calories={recipe.recipe.calories}
@@ -69,7 +71,8 @@ const App = () => {
           />
         ))}
       </div>
-      <div className='title'>{title}</div>
+
+      <div className={title ? "title" : "no-title"}>{title}</div>
     </div>
   );
 };

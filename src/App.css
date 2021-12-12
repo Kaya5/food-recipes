@@ -1,46 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 .App{
-  min-height: 100vh;
-  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+min-height: 100vh;
+background-image: url('https://cdn.pixabay.com/photo/2019/04/02/04/32/masala-4096891_1280.jpg');
+background-repeat: no-repeat;
+transition: 0.5s ease;
+background-size: cover;
+
+}
+
+.no-bg{
+  background-color: rgb(233, 245, 255);
+  height: max-content;
 }
 
 .form{
-  min-height: 10vh;
+  height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: right;
+  
 }
-input{
-  font-family: 'Nanum Gothic Coding', monospace;
-}
+
 .search-bar{
-  width: 30%;
+  font-family: 'Nanum Gothic Coding', monospace;
+  width: 25%;
   height: 4vh;
-  border: none;
   padding: 10px;
   outline: none;
+  border-radius: 6px;
+  border: 2px solid rgba(181, 221, 253, 0.5);
 }
 
 .title{
-  font-size: calc(18px + 3vw);
+  font-size: calc(16px + 1.5vw);
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  justify-self: center;
-  font-weight: 700;
-  font-family: 'Great Vibes', cursive;
-  color: rgba(0, 0, 0, 0.7);
+  height: 90%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;  
+  color: black;
+  font-weight: 600;
+  position: absolute;
+  margin: auto;
+  padding: auto;
 }
 button{
-  height: 48px;
-  border: none;
+  height: 50px;
+  border: 2px solid rgba(181, 221, 253, 0.5);
+  border-radius: 5px;
   padding: 10px;
   margin: 4px;
   margin-right: 5%;
-  font-family: 'Nanum Gothic Coding', monospace;
-  font-weight: 700;
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  font-family: 'Raleway', sans-serif;  
+  font-weight: 600;
+  background-color: rgb(224, 212, 212);
 }
 
 .recipes{
@@ -49,3 +63,8 @@ button{
   flex-wrap: wrap;
 }
 
+
+.no-title{
+  display: none;
+
+}
